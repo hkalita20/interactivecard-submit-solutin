@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+   media="screen and (max-width: 1170px)" 
+   href="css/phone.css"/>
+
+  <link rel="stylesheet" 
+  media="screen and (min-width: 1170px)"
+  href="style.css">
+
+  <link rel="stylesheet"  href="https://fonts.google.com/specimen/Space+Grotesk">
+</head>
+<body>
+  <div class="flex-box">
+
+    <div class="back">
+      <img class="back-img" id="themain" src="/images/bg-main-mobile.png" alt="">
+      <div class="round"></div>
+      <div class="round2"></div>
+      <div class="front-card">
+        <img class="fist-img" src="images/bg-card-front.png" alt="">
+        <p id="Carholdername">JANE APPLESEED</p>
+        <p id="Carholdernumber">0000 0000 0000 0000</p>
+        <p id="Exp"><span class="mn">00</span>/<span class="yr">00</span></p>
+      </div>
+      <div class="back-card">
+        <img class="sec-img" src="images/bg-card-back.png" alt="">
+        <p id="cvc-num">000</p>
+      </div>
+    </div>
+    <div class="form">
+      
+      <form id="myForm" name="MyForm" onsubmit="return validateForm()">
+        <label for="#card-holder">CARDHOLDER NAME</label>
+        <div id="name">
+          <input type="text" name="fname" class="text-box mr" id="card-holder" placeholder="e.g. JANE APPLESEED">
+          <p class="formerror hidden"><b></b></p>
+        </div>
+        <label for="#card-number">CARD NUMBER</label>
+        <div id="number">
+        <input type="text" name="card-number" id="card-number" class="text-box mr" placeholder="e.g. 1234 5678 9123 0000" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)" placeholder='Enter Credit Card No' >
+        <p class="formerror hidden"><b></b></p>
+      </div>
+        
+        <!-- expdate -->
+        
+        
+        <!-- <div class="flux"> -->
+          
+          
+          <div id="exp-main">
+
+            <label for="#exp-date">EXP. DATE (MM/YY)</label>
+            <div class="date-field" id="exp-date">
+              <input type="text" class="month box mr" id="month" placeholder="MM" maxlength="2">
+              <input type="text" class="year box mr" id="year" placeholder="YY" maxlength="2">
+            </div>
+            <p class="formerror hidden"><b></b></p>
+           
+            
+          </div>
+            
+            
+          <div id="cvv-main">
+
+            
+            <label for="#cvv">CVV</label>
+            <div class="cvv-input">
+              <input class="text-box mr"  type="text" id="cvv" placeholder="CVV" maxlength="3">
+            </div>
+            <p class="formerror hidden"><b></b></p>
+          </div>
+
+
+        <!-- </div> -->
+
+
+        
+        <button class="btn" id="btn"style="display: block;">CONFIRM</button>
+      </form>
+      </div>
+
+    <div class="thankyou hidden" id="thank-you" >
+      <img src="/images/icon-complete.svg" alt="">
+      <h2 class="Thank-text">THANK YOU!</h2>
+      <p class="Text">we've added your card details</p>
+      <button value="submit" id="continue">Continue</button>
+
+
+    </div>
+
+  </div>
+  <script>
+    function formats(ele,e){
+      if(ele.value.length<19){
+        ele.value= ele.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+        return true;
+      }else{
+        return false;
+      }
+    }
+    
+    function numberValidation(e){
+      e.target.value = e.target.value.replace(/[^\d ]/g,'');
+      return false;
+    }
+ 
+  </script>
+<script src="index.js"></script>
+  </body>
+  </html>
