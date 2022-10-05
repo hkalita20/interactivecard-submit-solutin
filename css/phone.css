@@ -1,0 +1,224 @@
+body{
+    font-family: monospace;
+}
+
+/* //background */
+
+
+.back-img{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100vw;
+    height: 50vh;
+}
+
+.btn{
+    font-family: monospace;
+    width: 16rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 7px;
+    border-radius: 9px;
+    background-color: rgb(42, 14, 92);
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* CARDS */
+    
+
+    /* front  */
+.front-card{
+    position: relative;
+    height: 200px;
+    width: 364.9px;
+    top:12rem;
+    left: 20%;
+    z-index: 2;
+}
+
+.fist-img{
+    height: 200px;
+    
+}
+
+#Carholdername{
+    position: relative;
+    height: 2rem;
+    width: 19rem;
+    font-size: 14px;
+    bottom: 28%;
+    left: 2%;
+    color: #fff;
+}
+
+#Carholdernumber{
+    position: relative;
+    height: 2rem;
+    width: 19rem;
+    font-size: 28px;
+    bottom: 90%;
+    left: 10%;
+    color: #fff;
+}
+
+#Exp{
+    position: relative;
+    font-size: 14px;
+    bottom: 11.2rem;
+    width: 1rem;
+    left: 19rem;
+    color: #fff;
+    height: 1rem;
+}
+
+
+          /* back  */
+.back-card{
+    height: 13rem;
+}
+.sec-img{
+    height: 33%;
+    right: 8%;
+    position: absolute;
+    top: 10%;
+
+}
+
+#cvc-num{
+    position: relative;
+    font-size: 15px;
+    bottom: 32.5%;
+    left: 79%;
+    color: #fff;
+    height: 1rem;
+    width: 2rem;
+}
+
+
+
+
+/* form  */
+input{
+    border-radius: 7px;
+}
+
+.form{
+    margin: 2rem 20% 0 20%;
+}
+
+.text-box{
+    width:16rem;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+
+
+.month, .year{
+    display: inline-block;
+}
+
+
+.card-holder{
+    padding-bottom: 2%;
+}
+
+.mr{
+    margin-bottom: 1rem;
+}
+
+.box{
+    width: 57px;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+
+.flux{
+    display: inline;
+}
+
+
+#exp-main{
+    display: inline-table;
+}
+
+#cvv{
+    width: 66%;
+}
+
+#cvv-main{
+    display: inline-table;
+}
+
+
+
+
+/* //;round */
+
+.round{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    z-index: 3;
+    border-radius: 3rem;
+}
+
+.round2{
+    height: 17px;
+    width: 17px;
+    top: 36.3%;
+    left: 32%;
+    z-index: 3;
+    position: absolute;
+    border-radius: 3rem;
+    border: 2px solid #fff;
+}
+
+
+
+#continue{
+    font-family: monospace;
+    width: 16rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 7px;
+    border-radius: 9px;
+    background-color: rgb(42, 14, 92);
+    color: white;
+    margin-top: 10px;
+}
+#continue:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.thankyou{
+    text-align: center;
+    align-self: center;
+}
+
+.Thank-text{
+    font-size: 2rem;
+}
+
+.Text{
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+
+
+
+.formerror{
+    color: red;
+}

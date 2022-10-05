@@ -1,0 +1,219 @@
+body{
+    font-size: 0.8rem;
+    font-family: monospace;
+    margin: 0;
+}
+
+.back{
+    background-image: url("images/bg-main-desktop.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 50vw;
+}
+
+.form{
+    align-self: center;
+    margin-left: 13%;
+}
+.flex-box{
+    display: flex;      
+}
+
+.front-card{
+    height: 13rem;
+    top: 93px;
+    width: 23.71rem;
+    left: 229px;
+    position: relative;
+}
+.fist-img{
+   height: 13rem;
+}
+
+.back-card{
+    height: 13rem;
+    position: relative;
+    top: 8.5rem;
+    width: 23.71rem;
+    left: 11rem;
+}
+.sec-img {
+    height: 13rem;
+    }
+
+.btn{
+    font-family: monospace;
+    width: 16rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 7px;
+    border-radius: 9px;
+    background-color: rgb(42, 14, 92);
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.month, .year{
+    display: inline-block;
+}
+
+
+.card-holder{
+    padding-bottom: 2%;
+}
+
+.text-box{
+    width:16rem;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+#Carholdername{
+    position: absolute;
+    font-size: 14px;
+    top: 75%;
+    left: 4%;
+    color: #fff;
+    height: 2rem;
+    width: 19rem;
+}
+
+#Carholdernumber{
+    position: absolute;
+    font-size: 28px;
+    top: 34%;
+    right: 9%;
+    color: #fff;
+    height: 2rem;
+    width: 19rem;
+}
+
+#Exp{
+    position: absolute;
+    font-size: 14px;
+    top: 75%;
+    left: 84%;
+    color: #fff;
+    height: 2rem;
+    width: 19rem;
+}
+
+#cvc-num{
+    position: relative;
+    font-size: 15px;
+    bottom: 63%;
+    left: 79%;
+    color: #fff;
+    height: 2rem;
+    width: 19rem;
+}
+
+.mr{
+    margin-bottom: 1rem;
+}
+
+
+.box{
+    width: 57px;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+#cvv{
+    width: 66%;
+}
+
+.flux{
+    display: inline;
+}
+
+
+#exp-main{
+    display: inline-table;
+}
+
+
+#cvv-main{
+    display: inline-table;
+}
+input{
+    border-radius: 7px;
+}
+
+.round{
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    z-index: 2;
+    border-radius: 3rem;
+}
+
+.round2{
+    height: 17px;
+    width: 17px;
+    top: 21.3%;
+    left: 22%;
+    z-index: 3;
+    position: absolute;
+    border-radius: 3rem;
+    border: 2px solid #fff;
+}
+
+
+@media (min-width: 1170px) 
+{
+   
+    #themain{
+        display: none;
+    }
+}
+
+
+
+
+.formerror{
+    color: red;
+}
+
+
+#continue{
+    font-family: monospace;
+    width: 16rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 7px;
+    border-radius: 9px;
+    background-color: rgb(42, 14, 92);
+    color: white;
+    margin-top: 10px;
+}
+#continue:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.thankyou{
+    text-align: center;
+    align-self: center;
+}
+
+.Thank-text{
+    font-size: 2rem;
+}
+
+.Text{
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
